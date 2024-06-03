@@ -1,63 +1,62 @@
 ﻿using System;
+using System.Text;
+using System.Threading.Tasks;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Введіть номер завдання (1-9):");
-        int task = int.Parse(Console.ReadLine());
+        Console.OutputEncoding = Encoding.UTF8;
+        Console.WriteLine("Vvedit 3 4isla");
+        Console.Write("a:");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("b:");
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.Write("c:");
+        int c = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i < 10; i++)
+        {
+            allZavd(a, b, c, i);
+        }
+        Console.ReadLine();
         //доробити окремий медот свич и виконувати все через for
-        switch (task)
+    }
+    static void allZavd(int a,int b,int c,int i)
+    {
+        switch (i)
         {
             case 1:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
                     int sum = a + b;
                     Console.WriteLine($"Сума чисел: {sum}");
                     break;
                 }
             case 2:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
                     int product = a * b;
                     Console.WriteLine($"Добуток чисел: {product}");
                     break;
                 }
             case 3:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
                     double average = (a + b) / 2.0;
                     Console.WriteLine($"Середнє значення чисел: {average}");
                     break;
                 }
             case 4:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
                     int difference = a - b;
                     Console.WriteLine($"Різниця чисел (a - b): {difference}");
                     break;
                 }
             case 5:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
                     int difference = b - a;
                     Console.WriteLine($"Різниця чисел (b - a): {difference}");
                     break;
                 }
             case 6:
                 {
-                    Console.WriteLine("Введіть ціле число:");
-                    int a = int.Parse(Console.ReadLine());
                     if (a % 2 == 0)
                     {
                         int result = a / 2;
@@ -72,10 +71,6 @@ class Program
                 }
             case 7:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
-
                     if (a < 0 && b > 0)
                     {
                         a += 5;
@@ -102,10 +97,6 @@ class Program
                 }
             case 8:
                 {
-                    Console.WriteLine("Введіть два цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
-
                     if (a % 2 == 0 && b % 2 != 0)
                     {
                         b += 1;
@@ -131,11 +122,6 @@ class Program
                 }
             case 9:
                 {
-                    Console.WriteLine("Введіть три цілих числа:");
-                    int a = int.Parse(Console.ReadLine());
-                    int b = int.Parse(Console.ReadLine());
-                    int c = int.Parse(Console.ReadLine());
-
                     if (a != b && b != c && a != c)
                     {
                         int min = Math.Min(a, Math.Min(b, c));
@@ -159,7 +145,7 @@ class Program
                 }
             default:
                 {
-                    Console.WriteLine("Невірний номер завдання. Введіть число від 1 до 9.");
+                    Console.WriteLine("Error.");
                     break;
                 }
         }
