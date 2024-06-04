@@ -18,6 +18,7 @@ namespace NP._6._2
             Ex3();
             Console.WriteLine("Четверте");
             Ex4();
+            Console.ReadLine();
 
         }
         static void printMass(int[] mass)
