@@ -10,6 +10,14 @@ namespace NP._6._2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Перше");
+            Ex1();
+            Console.WriteLine("Друге");
+            Ex2();
+            Console.WriteLine("Третье");
+            Ex3();
+            Console.WriteLine("Четверте");
+            Ex4();
 
         }
         static void printMass(int[] mass)
