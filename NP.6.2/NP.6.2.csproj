@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4430063A-9D9A-49A0-96A6-AEC528171279}</ProjectGuid>
+    <ProjectGuid>{FD1329F7-EA4A-4433-91E8-9E745BF0B35A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NP._6._1</RootNamespace>
-    <AssemblyName>NP.6.1</AssemblyName>
+    <RootNamespace>NP._6._2</RootNamespace>
+    <AssemblyName>NP.6.2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
