@@ -16,6 +16,12 @@ namespace NP._6._3
             int n = Convert.ToInt32(Console.ReadLine());
             Ex1(n);
             Ex2(n);
+            Ex3(n);
+            Ex4();
+            Ex5();
+            Ex6();
+            Ex7();
+            Ex8();
             Console.ReadLine();
         }
         static void printMass(int[] mass) { 
@@ -69,7 +75,96 @@ namespace NP._6._3
             Console.WriteLine($"Кількість не парних чисел {cookie}");
             Console.WriteLine($"Сума не праних чисел {resutl}");
         }
-        static void Ex4(int n)
+        static void Ex4()
+        {
+            Console.WriteLine("Завдання 4");
+            Random rnd = new Random();
+            int[] mass = new int[20];
+            for (int i = 0; i < mass.Length; i++)
+            {
+                mass[i] = rnd.Next(-10,11);
+            }
+            printMass(mass);
+            int result = 0;
+            for (int i = 0; i < mass.Length; i++)
+            {
+                if (mass[i] >= 1)
+                {
+                    Console.WriteLine("Позитивне число:" + mass[i]);
+                    result = result + mass[i];
+                }
+            }
+        }
+        static void Ex5()
+        {
+            Console.WriteLine("Завдання 5");
+            Random rnd = new Random();
+            int[] mass = new int[20];
+            for (int i = 0; i < mass.Length; i++)
+            {
+                mass[i] = rnd.Next(-10, 11);
+            }
+            printMass(mass);
+            int result = 0;
+            for (int i = 0; i < mass.Length; i++)
+            {
+                if (mass[i] < 0)
+                {
+                    Console.WriteLine("Відємне число число:" + mass[i]);
+                    result = result + mass[i];
+                }
+            }
+        }
+        static void Ex6()
+        {
+            Console.WriteLine("Завдання 6");
+            Random rnd = new Random();
+            int[] massRandom = new int[10];
+            for (int i = 0; i < massRandom.Length; i++)
+            {
+                massRandom[i] = rnd.Next(1, 21);
+            }
+            printMass(massRandom);
+            Console.WriteLine($"Кількість чисел більше 5 | {massRandom.Count(x => x > 5)}");
+        }
+        static void Ex7()
+        {
+            Console.WriteLine("Завдання 6");
+            Random rnd = new Random();
+            int[] massRandom = new int[10];
+            for (int i = 0; i < massRandom.Length; i++)
+            {
+                massRandom[i] = rnd.Next(1, 21);
+            }
+            printMass(massRandom);
+            Console.WriteLine($"Кількість чисел більше 5 | {massRandom.Count(x => x < 5)}");
+        }
+        static void Ex8()
+        {
+            Console.WriteLine("Завдання 6");
+            Random rnd = new Random();
+            int[] massRandom = new int[10];
+            for (int i = 0; i < massRandom.Length; i++)
+            {
+                massRandom[i] = rnd.Next(1, 21);
+            }
+            printMass(massRandom);
+            Console.WriteLine($"Кількість чисел більше 5 | {massRandom.Count(x=> x > massRandom.Sum()/10)}");
+        }
+        static void Ex9()
+        {
+            int cookie = 0;
+            Console.Write("Число кратне 3:");
+            for (int i = 100; i < 200; i++)
+            {
+                if(i % 3 == 0)
+                {
+                    cookie++;
+                    Console.WriteLine($" {i},");
+                }
+            }
+        }
+        static void Ex10()
         {
 
         }
