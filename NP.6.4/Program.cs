@@ -217,7 +217,7 @@ namespace NP._6._4
         static void Ex5()
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Console.WriteLine("--Перевірка Ділення--");
+            Console.WriteLine("--Перевірка Множення --");
             Random rnd = new Random();
             int[] massX = new int[10];
             int[] massY = new int[10];

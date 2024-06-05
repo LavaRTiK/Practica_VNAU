@@ -151,7 +151,7 @@ namespace NP._7._1
             }
             int[] oppositeArray = mass.Select(n => -n).ToArray();
             printmass(mass);
-            Console.WriteLine("Обернуний масив: ");
+            Console.WriteLine("Обернуний масив:");
             printmass(oppositeArray);
         }
         static void Ex11()
@@ -222,9 +222,29 @@ namespace NP._7._1
             Console.Write("Введіть N: ");
             int N = int.Parse(Console.ReadLine());
             printmass(mass);
-            Console.WriteLine("Елемент рівний " + N + ": " + string.Join(", ", mass.Where(n => n == N)));
+            //Console.WriteLine("Елемент рівний " + N + ": " + string.Join(", ", mass.Where(n => n == N)));
+            findPairsWithSumLinq(mass,N);
         }
+        static void findPairsWithSumLinq(int[] mass, int N)
+        {
+            var pairs = mass
+                .SelectMany((x, i) => mass.Skip(i + 1), (x, y) => new { x, y })
+                .Where(pair => pair.x + pair.y == N)
+                .ToList();
 
+            if (pairs.Count > 0)
+            {
+                Console.WriteLine($"Пари елементів, які в сумі дають {N}:");
+                foreach (var pair in pairs)
+                {
+                    Console.WriteLine($"({pair.x}, {pair.y})");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Пари не знайдено.");
+            }
+        }
         static void Ex16()
         {
             Console.WriteLine("Завдання 16");
@@ -237,7 +257,7 @@ namespace NP._7._1
             Console.Write("Введіть N: ");
             int N = int.Parse(Console.ReadLine());
             printmass(mass);
-            Console.WriteLine("Елементи які при добудку дають " + N + ": " + string.Join(", ", mass.Where(n => n != 0 && N % n == 0)));
+            Console.WriteLine("Елементи які при добудку дають " + N + ": " + string.Join(", ", mass.SelectMany((x, i) => mass.Skip(i + 1), (x, y) => new { x, y }).Where(pair => pair.x * pair.y == N).ToList()));
         }
 
         static void Ex17()
