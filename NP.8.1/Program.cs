@@ -561,7 +561,7 @@ namespace NP._8._1
         }
         static void Ex58()
         {
-            Console.WriteLine("--Перевірка діленя--");
+            Console.WriteLine("--Перевірка множення--");
             int size = EnterValue("Кількість прикладів:");
             int randomMin = EnterValue("Мінімальне значення:");
             int randomMax = EnterValue("Максимальне значення:");
