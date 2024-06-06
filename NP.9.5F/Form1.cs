@@ -16,7 +16,17 @@ namespace NP._9._5F
         private void button1_Click(object sender, EventArgs e)
         {
             double total = (checkBox1.Checked ? Convert.ToDouble(label4.Text) * Convert.ToInt32(textBox1.Text) : 0) + (checkBox2.Checked ? Convert.ToDouble(label5.Text) * Convert.ToInt32(textBox2) : 0) + (checkBox3.Checked ? Convert.ToDouble(label6.Text) * Convert.ToInt32(textBox3) : 0) + (checkBox4.Checked ? Convert.ToDouble(label7.Text) * Convert.ToInt32(textBox4) : 0);
-            //textBox5.Text =
+            textBox5.Text = total.ToString();
+            checkBox1.Enabled = false;
+            checkBox2.Enabled = false;
+            checkBox3.Enabled = false;
+            checkBox4.Enabled = false;
+            textBox1.Enabled = false;
+            textBox2.Enabled = false;
+            textBox3.Enabled = false;
+            textBox4.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = true;
         }
         private void cheak()
         {
@@ -142,6 +152,17 @@ namespace NP._9._5F
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox5.Text = "";
+            checkBox1.Enabled = true;
+            checkBox2.Enabled = true;
+            checkBox3.Enabled = true;
+            checkBox4.Enabled = true;
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            button1.Enabled = true;
+            button2.Enabled = false;
 
         }
     }
