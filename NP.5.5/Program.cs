@@ -22,6 +22,7 @@ namespace NP._5._5
             Exp1(x, b, a);
             Exp2(x, b, a, c);
             Exp3(x, b, a);
+            Console.ReadLine();
         }
         static void Exp1(double x,double b, double a)
         {

@@ -97,7 +97,7 @@ namespace NP._9._4F
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            cheack();
         }
         private void cheack()
         {
@@ -128,11 +128,22 @@ namespace NP._9._4F
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             price = Convert.ToDouble(textBox5.Text);
+            cheack();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            cheack();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            cheack();
         }
     }
 }

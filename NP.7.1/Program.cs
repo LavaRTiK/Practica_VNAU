@@ -11,7 +11,7 @@ namespace NP._7._1
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Ex10();
+            Ex7();
             Console.ReadLine();
         }
         static void printmass(int[] mass)

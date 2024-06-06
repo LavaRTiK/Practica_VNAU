@@ -83,7 +83,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Location = new Point(20, 46);
-            checkBox1.Margin = new Padding(2, 2, 2, 2);
+            checkBox1.Margin = new Padding(2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(76, 19);
             checkBox1.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             checkBox2.AutoSize = true;
             checkBox2.Location = new Point(20, 80);
-            checkBox2.Margin = new Padding(2, 2, 2, 2);
+            checkBox2.Margin = new Padding(2);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(76, 19);
             checkBox2.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             checkBox3.AutoSize = true;
             checkBox3.Location = new Point(20, 117);
-            checkBox3.Margin = new Padding(2, 2, 2, 2);
+            checkBox3.Margin = new Padding(2);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(76, 19);
             checkBox3.TabIndex = 5;
@@ -119,7 +119,7 @@
             // 
             checkBox4.AutoSize = true;
             checkBox4.Location = new Point(20, 154);
-            checkBox4.Margin = new Padding(2, 2, 2, 2);
+            checkBox4.Margin = new Padding(2);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(76, 19);
             checkBox4.TabIndex = 6;
@@ -156,6 +156,7 @@
             label6.Size = new Size(28, 15);
             label6.TabIndex = 9;
             label6.Text = "3,00";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
@@ -170,7 +171,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(182, 42);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
+            textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(106, 23);
             textBox1.TabIndex = 11;
@@ -180,7 +181,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(182, 79);
-            textBox2.Margin = new Padding(2, 2, 2, 2);
+            textBox2.Margin = new Padding(2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(106, 23);
             textBox2.TabIndex = 12;
@@ -190,7 +191,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(182, 116);
-            textBox3.Margin = new Padding(2, 2, 2, 2);
+            textBox3.Margin = new Padding(2);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(106, 23);
             textBox3.TabIndex = 13;
@@ -200,7 +201,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(182, 151);
-            textBox4.Margin = new Padding(2, 2, 2, 2);
+            textBox4.Margin = new Padding(2);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(106, 23);
             textBox4.TabIndex = 14;
@@ -211,7 +212,7 @@
             // 
             button1.Enabled = false;
             button1.Location = new Point(18, 193);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(125, 55);
             button1.TabIndex = 15;
@@ -223,7 +224,7 @@
             // 
             button2.Enabled = false;
             button2.Location = new Point(162, 193);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(125, 53);
             button2.TabIndex = 16;
@@ -244,7 +245,7 @@
             // textBox5
             // 
             textBox5.Location = new Point(153, 268);
-            textBox5.Margin = new Padding(2, 2, 2, 2);
+            textBox5.Margin = new Padding(2);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(135, 23);
             textBox5.TabIndex = 18;
@@ -273,7 +274,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

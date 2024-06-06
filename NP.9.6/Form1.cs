@@ -68,7 +68,7 @@ namespace NP._9._6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox3.Text = (Math.Round(Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox2.Text) * price),2).ToString(); 
+            textBox3.Text = Math.Round(Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox2.Text) * price ,2).ToString(); 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

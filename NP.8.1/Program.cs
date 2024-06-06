@@ -14,7 +14,8 @@ namespace NP._8._1
             /*Народ, з восьмого блоку де 60 завдань, робите: 8,10,14,15,16,17,18,20,21,22,31,35,36,45,47,50,51,55,56,57,58,59,60 */
             //Ex8();
             //Ex10();
-            Ex14();
+            //Ex14();
+            Ex20();
             Console.ReadLine();
 
 
@@ -42,9 +43,9 @@ namespace NP._8._1
         static void randomNubmersMatrixInsert(int min,int max, int[,] matrix)
         {
             Random rnd = new Random();
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(1); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < matrix.GetLength(0); j++)
                 {
                     matrix[i, j] = rnd.Next(min, max);
                 }
@@ -65,9 +66,9 @@ namespace NP._8._1
         }
         static void printMatrix(int[,] matrix)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < matrix.GetLength(1); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < matrix.GetLength(0); j++)
                 {
                     Console.Write(matrix[i, j] + " ");
                 }
@@ -204,10 +205,10 @@ namespace NP._8._1
             int[,] matrix = new int[sizeMatrixX, sizeMatrixY];
             randomNubmersMatrixInsert(randomMin,randomMax,matrix);
             printMatrix(matrix);
-            for (int j = 0; j < matrix.GetLength(0); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 int countEven = 0;
-                for (int i = 0; i < matrix.GetLength(1); i++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     if (matrix[i, j] % 2 == 0)
                     {
@@ -226,10 +227,10 @@ namespace NP._8._1
             int[,] matrix = new int[sizeMatrixX, sizeMatrixY];
             randomNubmersMatrixInsert(randomMin, randomMax, matrix);
             printMatrix(matrix);
-            for (int j = 0; j < matrix.GetLength(0); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 int sumEven = 0;
-                for (int i = 0; i < matrix.GetLength(1); i++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     if (matrix[i, j] % 2 == 0)
                     {
@@ -248,10 +249,10 @@ namespace NP._8._1
             int[,] matrix = new int[sizeMatrixX, sizeMatrixY];
             randomNubmersMatrixInsert(randomMin, randomMax, matrix);
             printMatrix(matrix);
-            for (int j = 0; j < matrix.GetLength(0); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 int countOdd = 0;
-                for (int i = 0; i < matrix.GetLength(1); i++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     if (matrix[i, j] % 2 != 0)
                     {
@@ -270,10 +271,10 @@ namespace NP._8._1
             int[,] matrix = new int[sizeMatrixX, sizeMatrixY];
             randomNubmersMatrixInsert(randomMin, randomMax, matrix);
             printMatrix(matrix);
-            for (int j = 0; j < matrix.GetLength(0); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 int sumOdd = 0;
-                for (int i = 0; i < matrix.GetLength(1); i++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     if (matrix[i, j] % 2 != 0)
                     {

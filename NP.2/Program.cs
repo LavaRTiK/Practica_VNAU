@@ -30,7 +30,8 @@ namespace NP._2
             string group = "KH22-1 ";
             DateTime dateTime = DateTime.Now;
             string teacher = "Чіков Ілля Анатолівич ";
-            Console.WriteLine(firstname,surname,midname,datanarojenja,old,unviData,group,datanarojenja,dateTime.ToString());
+            Console.WriteLine(firstname + surname + midname + datanarojenja +old + unviData +group +datanarojenja + dateTime.ToString() +teacher);
+            Console.ReadLine();
         }
     }
 }

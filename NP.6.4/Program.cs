@@ -11,7 +11,8 @@ namespace NP._6._4
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Exchange();
+            //Exchange();
+            Ex4();
             Console.ReadLine();
         }
         public static void Ex1()

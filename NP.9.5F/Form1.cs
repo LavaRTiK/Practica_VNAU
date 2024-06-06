@@ -15,7 +15,7 @@ namespace NP._9._5F
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double total = (checkBox1.Checked ? Convert.ToDouble(label4.Text) * Convert.ToInt32(textBox1.Text) : 0) + (checkBox2.Checked ? Convert.ToDouble(label5.Text) * Convert.ToInt32(textBox2) : 0) + (checkBox3.Checked ? Convert.ToDouble(label6.Text) * Convert.ToInt32(textBox3) : 0) + (checkBox4.Checked ? Convert.ToDouble(label7.Text) * Convert.ToInt32(textBox4) : 0);
+            double total = (checkBox1.Checked ? Convert.ToDouble(label4.Text) * Convert.ToInt32(textBox1.Text) : 0) + (checkBox2.Checked ? Convert.ToDouble(label5.Text) * Convert.ToInt32(textBox2.Text) : 0) + (checkBox3.Checked ? Convert.ToDouble(label6.Text) * Convert.ToInt32(textBox3.Text) : 0) + (checkBox4.Checked ? Convert.ToDouble(label7.Text) * Convert.ToInt32(textBox4.Text) : 0);
             textBox5.Text = total.ToString();
             checkBox1.Enabled = false;
             checkBox2.Enabled = false;
@@ -163,6 +163,11 @@ namespace NP._9._5F
             textBox4.Enabled = true;
             button1.Enabled = true;
             button2.Enabled = false;
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
 
         }
     }
